@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Experience Survey</title>
+</head>
+<body>
+
+<h1>Candidate Experience Survey</h1>
+
+<form>
+    <!-- Overall CNPS Question -->
+    <label for="overallExperience">1. On a scale of 0-10, how likely are you to recommend applying for a position here to a friend or colleague?</label>
+  <input id="cnps-question" name="cnps-question" type="range" min="0" max="10" step="1" value="5" required>
+    <output id="cnps-output">5</output>
+<br><br>
+    <!-- Application Process -->
+    <label for="applicationProcess">2. How easy was it to submit your application on our website?</label>
+  <input id="cnps-question1" name="cnps-question1" type="range" min="0" max="10" step="1" value="5" required>
+    <output id="cnps-output1">5</output>
+<br><br>
+    <!-- Job Description Accuracy -->
+    <label for="jobDescriptionAccuracy">3. To what extent did the job description accurately reflect the role during the interview with the hiring team?</label>
+  <input id="cnps-question2" name="cnps-question2" type="range" min="0" max="10" step="1" value="5" required>
+    <output id="cnps-output2">5</output><br><br>
+    <!-- Communication Effectiveness -->
+    <label for="communicationEffectiveness">4. How prompt and effective was the email and phone communication during our hiring process?</label>
+  <input id="cnps-question3" name="cnps-question3" type="range" min="0" max="10" step="1" value="5" required>
+    <output id="cnps-output3">5</output><br><br>
+    <!-- Interview Experience -->
+    <label for="interviewExperience">5. On a scale of 0-10, how would you rate your experience interviewing at our company?</label>
+  <input id="cnps-question4" name="cnps-question4" type="range" min="0" max="10" step="1" value="5" required>
+    <output id="cnps-output4">5</output><br><br>
+    <!-- Likelihood to Provide Online Review -->
+    <label for="onlineReviewLikelihood">6. Based on your overall experience, how likely are you to provide a positive review or rating of our company online?</label>
+  <input id="cnps-question5" name="cnps-question5" type="range" min="0" max="10" step="1" value="5" required>
+    <output id="cnps-output5">5</output><br><br>
+    <!-- Likelihood to Apply Again -->
+    <label for="applyAgainLikelihood">7. Would you apply for a future job opening at our company?</label>
+  <input id="cnps-question6" name="cnps-question6" type="range" min="0" max="10" step="1" value="5" required>
+    <output id="cnps-output6">5</output><br><br>
+    <!-- Improvement Suggestions -->
+    <label for="improvementSuggestions">8. What was the biggest challenge you faced during our hiring process? How do you think the hiring process could be improved?</label>
+    <textarea id="improvementSuggestions" name="improvementSuggestions" rows="1"></textarea>
+<br><br><br><br>
+   <!-- Submit Button -->
+    <button type="submit">Submit Survey</button>
+</form>
+<script>
+  // Get the input and output elements
+  var cnpsInput = document.getElementById("cnps-question");
+  var cnpsOutput = document.getElementById("cnps-output");
+
+  // Update the output value when the input changes
+  cnpsInput.oninput = function() {
+    cnpsOutput.value = cnpsInput.value;
+  };
+	
+	  // Get the input and output elements
+  var cnpsInput1 = document.getElementById("cnps-question1");
+  var cnpsOutput1 = document.getElementById("cnps-output1");
+
+  // Update the output value when the input changes
+  cnpsInput1.oninput = function() {
+    cnpsOutput1.value = cnpsInput1.value;
+  };
+	
+		  // Get the input and output elements
+  var cnpsInput2 = document.getElementById("cnps-question2");
+  var cnpsOutput2 = document.getElementById("cnps-output2");
+
+  // Update the output value when the input changes
+  cnpsInput2.oninput = function() {
+    cnpsOutput2.value = cnpsInput2.value;
+  };
+	
+		  // Get the input and output elements
+  var cnpsInput3 = document.getElementById("cnps-question3");
+  var cnpsOutput3 = document.getElementById("cnps-output3");
+
+  // Update the output value when the input changes
+  cnpsInput3.oninput = function() {
+    cnpsOutput3.value = cnpsInput3.value;
+  };
+	
+		  // Get the input and output elements
+  var cnpsInput1 = document.getElementById("cnps-question1");
+  var cnpsOutput1 = document.getElementById("cnps-output1");
+
+  // Update the output value when the input changes
+  cnpsInput1.oninput = function() {
+    cnpsOutput1.value = cnpsInput1.value;
+  };
+	
+	
+</script>
+
+</body>
+</html>
